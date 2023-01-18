@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ishita Rakchhit" />
+    <meta name="description" content="This is my first HTML page" />
+    <title>My first webpage</title>
+    <link rel="icon" href="bike1.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- a page can have multiple headers-->
+      <h1>Learning HTML</h1>
+      <nav aria-label="primary navigation">
+        <!--It's an attribute designed to help assistive technology (e.g. screen readers) attach a label to an otherwise anonymous HTML element. and to link to attributes use <nav aria-labelledby ="primary navigation"> <h2 id = "primary navigation"> primary navigation </h2> -->
+        <ul>
+          <li><a href="#html"> Learning HTML</a></li>
+          <!-- Adding links to sections wihtin the page-->
+          <li><a href="#list">Learning Lists</a></li>
+          <li><a href="#author">About the Author</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!--contains the main content of the page-->
+
+      <article id="html">
+        <!-- making an article with 2 sections having headings in h2- done accroing to format-->
+        <h2>
+          I'm ready to<strong>
+            learn
+            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"
+              >html</a
+            ></strong
+          >
+        </h2>
+        <!-- Section splits the page into sections -->
+        <section>
+          <h3>HTML5</h3>
+          <p>This is my first webpage</p>
+          <img
+            src="/img/html_logo_300x300.png"
+            alt="HTML LOGO"
+            title="I am learning html"
+            width="200"
+            loading="lazy"
+          />
+          <!--lazy loading loads the image only when it thinks it is needed, when the image does not appear in the front it does not load it-->
+
+          <figure>
+            <!-- wraps a particular set of code or image and gives formatting-->
+            <figcaption>An example of html 5 code</figcaption>
+            <!-- Provides caption to the image or code-->
+            <code>&lt;h1&gt; Hello World &lt;/h1&gt;</code>
+          </figure>
+        </section>
+        <section>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            vel distinctio, officia voluptatem velit, suscipit nemo cupiditate
+            ipsa, fugiat beatae placeat dolorem fugit saepe ducimus maiores?
+            Temporibus dolores sit dolor.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            vel distinctio, officia voluptatem velit, suscipit nemo cupiditate
+            ipsa, fugiat beatae placeat dolorem fugit saepe ducimus maiores?
+            Temporibus dolores sit dolor.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            vel distinctio, officia voluptatem velit, suscipit nemo cupiditate
+            ipsa, fugiat beatae placeat dolorem fugit saepe ducimus maiores?
+            Temporibus dolores sit dolor.
+          </p>
+          <br />
+          <aside>
+            <!-- to add text which is not as important as the content in main-->
+            <details>
+              <!-- to add details-->
+              <summary>
+                <!-- to add a summary of the text-->
+                Guess the <mark> number of hours</mark> I code daily
+                <!-- <mark> highlights the specific set of text and is an inlilne -->
+              </summary>
+              <p>
+                I code for <time datetime="PT3H">3 hours</time> starting from
+                <time datetime="10:00">10 am</time>
+              </p>
+              <!--time gives meaning to our webpage and helps assistive technology to identify, datetime specifies the time or duration(using PT3H) -->
+            </details>
+          </aside>
+          <br>
+          <table>
+            <caption>This is my daily schedule</caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>                <!--Scope helps the assistive technology to navigate through the table-->
+                <th scope="col">Work</th>                <!--You can also use id and headers instead of scope-->
+              </tr>
+            </thead>
+            <tbody>
+              <tr scope="row">
+                <th>Morning</th>
+                <td> <time datetime="10:00">10am</time>-<time datetime="01:00">1pm</time></td>
+                <td>Code</td>
+              </tr>
+              <tr scope="row">
+                <th>Afternoon</th>
+                <td> <time datetime="01:00">01pm</time>-<time datetime="03:00">03pm</time></td>
+                <td>Lunch</td>
+              </tr>
+              <tr scope="row">
+                <th>Evening</th>
+                <td> <time datetime="03:00">3am</time>-<time datetime="05:00">5pm</time></td>
+                <td>Study</td>
+              </tr>
+              <tr scope="row">
+                <th rowspan="3">Night</th>
+                <td> <time datetime="05:00">5am</time>-<time datetime="07:00">7pm</time></td>
+                <td>Sing</td>
+              </tr>
+              <tr scope="row">                
+                <td rowspan="2">All other times</td>                <!--Rowspan or colspan defines the no.s of rows or columns taken by any cell respectively-->
+                <td>Rest & Sleep</td>
+              </tr>
+              <tr scope="row">
+                <td>Free time</td>
+              </tr>
+              
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">This is how I spend my day- eat, study, code, sleep and repeat</td>       
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <br>
+
+      <hr />
+
+      <article id="list">
+        <h2>I'm planning a vaccation</h2>
+        <section>
+          <h3>Places on Earth I'd like to vist</h3>
+          <p>Carrabian Beach</p>
+          <figure>
+            <img
+              src="img/caribbean.jpg"
+              alt="Caribbean beach picture"
+              title="This is one of a place on Earth"
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+
+            <figcaption>Carrabian beach</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>Places I'd never visit</h3>
+          <!-- This is an description list-->
+          <dl>
+            <dt>North Pole</dt>
+            <!-- Description term-->
+            <dd>This is cold</dd>
+            <!-- Description details-->
+            <dt>South Pole</dt>
+            <dd>This is cold</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h3>Some parts of Earth</h3>
+          <!-- This is an ordered list-->
+          <ol>
+            <li>Longitude</li>
+            <li>Latitude</li>
+          </ol>
+
+          <!-- This is an unordered list-->
+          <ul>
+            <li>Asia</li>
+            <li>Africa</li>
+            <li>Europe</li>
+          </ul>
+        </section>
+        <hr />
+      </article>
+
+      <div></div>
+      <!--Has no semantic meaning to the webpage  and just divided the webpage-->
+      <span></span>
+      <!-- Has no semantic meaning to the webpage and just divides the webpage-->
+
+      <section id="author">
+        <h3>About Me</h3>
+        &lt;&lt;&lt;&copy;
+        <a href="about.html" target="_blank"> Ishita Rakchhit </a>&gt;&gt;&gt;
+        <p>
+          <a href="bike1.jpg" download>Download favicon</a>
+          <a href="mailto:random@gmail.com">My mail address</a>
+          <!-- Adds a mail id, avoid this and instead add a contact us-->
+          <a href="tel:+918888888888">My Phone number</a>
+          <!--adds a telephone number-->
+          <a href="https://www.google.co.in/" target="_blank">Go to web</a>
+          <!-- Opens a new webpage-->
+        </p>
+        <address>
+          s-29 sunder block, <br />
+          shakarpur, <br />Delhi-110092
+        </address>
+        <figure>
+          <img
+            src="img/vacation.jpg"
+            alt="vaccation image"
+            title="I have added a vaccation image"
+            width="400"
+            height="200"
+            loading="lazy"
+          />
+          <figcaption>Vaccation Image</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a href="/">link back to the route website</a>
+        <!-- Links back to the route website-->
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+        <!-- Adding link to move to the top-->
+      </p>
+    </footer>
+  </body>
+</html>
