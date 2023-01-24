@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="Description" content="You can contact us via the form mentioned">
+    <meta name="contact Us" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <article>
+
+            <h1>Marvellous Pizza Shop Timings</h1>
+            <!--Adding an unordered list to navigate to different pages or sections of different pages-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About MPS</a></li>
+                <li><a href="index.html#menu">Our incredible Menu</a></li>
+                <li><a href="timings.html"></a>Store timings</li>
+            </ul>
+            
+            <!--Adding an image-->
+            <figure>
+                <img src="img/contactpizza.jpg" alt="Enjoy our pizza day with us" width="500" height="300" loading="lazy">
+                <figcaption>Enjoy our pizza day with us</figcaption>
+            </figure>
+
+
+        </article>
+ 
+        <article>
+            <h1>Contact Us !</h1>
+            
+            <!--Adding a contact us form-->
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Type in your message</legend>
+
+                    <p>
+                        <label for="name">Full Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Ishita Rakchhit" required autofocus>
+                    </p>
+                    <p>
+                        <label for="email">Email Id: </label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </p>
+                    
+                    <label for="message">Your beautiful message</label> <br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    
+                </fieldset>
+                <!--Adding two buttons to submit or reset the values of the form-->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+
+        <hr>
+        
+        <!--Adding the location of our shop-->
+        <h1>Our Location</h1>
+        <address>3-Block, Master Society, NU</address>
+        <p>Phone: <a href="tel:+910000000000">0000-000-000</a></p>
+        
+        <!--Link to navigate back to the top of page-->
+        <a href="#">Back to top</a>
+        <hr>
+    </main>
+
+    <!--To show copywright claims of our shop-->
+    <footer>
+      Copywright &copy; The Marvellous Pizza Shop
+    </footer>
+    
+</body>
+</html>
