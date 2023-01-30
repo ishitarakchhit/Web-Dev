@@ -1,0 +1,10 @@
+body{                                                       
+    font-size: 20px;
+    background: #FFEECF;
+    font-size: 2rem;
+    min-height: 100vh;
+}
+
+p{
+    color: #44001A;
+}
