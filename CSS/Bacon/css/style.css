@@ -1,0 +1,15 @@
+h1{
+    color: darkblue;
+}
+
+.bacon{
+    background-color: red;
+}
+
+.broccoli{
+    background-color: green;
+}
+
+img:hover{
+    background-color: gold;
+}
