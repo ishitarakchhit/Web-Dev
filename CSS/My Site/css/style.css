@@ -1,13 +1,42 @@
-.div1{
-    background-color: #E5FDD1;
+body{
+    margin:0px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;;
 }
 
 h1{
-    margin-left: 0px;
     margin-top: 0px;
+    font-family: 'Dancing Script', cursive;
 }
 
-body{
-    margin-left: 0px;
-    margin-top: 0px;
+
+.top-container{
+    background-color: #E4F9F5;
+    position: relative; 
+    padding-top: 100px;
+
 }
+
+.top-cloud{
+    position: absolute;
+    top: 50px;
+    right: 300px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.middle-container{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+
+/* .bottom-container{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+} */
